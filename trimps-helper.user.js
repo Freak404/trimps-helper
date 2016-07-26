@@ -1,3 +1,10 @@
+// ==UserScript==
+// @match https://trimps.github.io/
+// @match http://trimps.github.io/
+// ==/UserScript==
+
+var game = window.game;
+
 function getEquipmentArray() {
     var eq = game.equipment;
 
@@ -69,4 +76,4 @@ var highlightBestEquipent = (function() {
     };
 })();
 
-setInterval(highlightBestEquipent, 5000);
+window.setInterval(highlightBestEquipent, 5000);

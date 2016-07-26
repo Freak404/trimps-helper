@@ -44,11 +44,11 @@ function getBestArmor() {
 }
 
 function highlight(id) {
-    document.getElementById(id).style.backgroundColor = "#9f9";
+    document.getElementById(id).style.color = "#9f9";
 }
 
 function unhighlight(id) {
-    document.getElementById(id).style.backgroundColor = "inherit";
+    document.getElementById(id).style.color = "inherit";
 }
 
 var highlightBestEquipent = (function() {

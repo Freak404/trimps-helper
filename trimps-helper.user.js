@@ -58,7 +58,7 @@ function trimpsHelper() {
         document.getElementById(id).style.color = "inherit";
     }
 
-    var highlightBestEquipent = (function() {
+    var highlightBestEquipment = (function() {
         var highlighted = [];
 
         return function() {
@@ -76,7 +76,8 @@ function trimpsHelper() {
         };
     })();
 
-    window.setInterval(highlightBestEquipent, 5000);
+    document.getElementById("buyContainer").onclick = highlightBestEquipment;
+    highlightBestEquipment();
 }
 
 var script = document.createElement("script");
